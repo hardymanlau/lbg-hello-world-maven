@@ -8,12 +8,6 @@ pipeline {
     }
     
     stages {
-        stage('Checkout'){
-            steps {
-                // Get some code from a GitHub repo
-                git branch: 'main', url: 'https://github.com/hardymanlau/lbg-hello-world-maven.git'
-            }
-        }
         stage('Compile'){
             steps {
                 // Run Maven on a Unix agent.
